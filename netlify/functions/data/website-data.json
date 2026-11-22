@@ -125,7 +125,7 @@
   },
   "hero": {
     "badge": "100% Authentic Guaranteed",
-    "title": "Science-Backed Scalp Restoration BD",
+    "title": "Science-Backed Hair Restoration & Scalp Wellness",
     "subtitle": "Reactivate dormant hair follicles, increase scalp blood microcirculation, and reclaim thicker hair with dermatologically proven Minoxidil 5% and micro-needling systems.",
     "primaryBtnText": "Shop Now",
     "primaryBtnLink": "/shop",
@@ -510,7 +510,7 @@
       "category": "Minoxidil",
       "regularPrice": 1250,
       "salePrice": 830,
-      "stock": 37,
+      "stock": 27,
       "isFeatured": true,
       "isActive": true,
       "productType": "minoxidil",
@@ -520,7 +520,7 @@
       "specifications": [],
       "carouselOrder": 0,
       "createdAt": "2026-11-20T18:37:07.958Z",
-      "updatedAt": "2026-11-22T01:25:03.072Z",
+      "updatedAt": "2026-11-22T09:17:40.196Z",
       "displayOrder": 0
     },
     {
@@ -802,8 +802,8 @@
     "whatsappNumber": "+8801356813069",
     "address": "Sonirakra, Dhonia, Dhaka 1236"
   },
-  "updatedAt": "2026-11-22T09:26:12.047Z",
-  "version": 193,
+  "updatedAt": "2026-11-22T09:17:41.465Z",
+  "version": 204,
   "orders": [
     {
       "_id": "ord_1795310703081",

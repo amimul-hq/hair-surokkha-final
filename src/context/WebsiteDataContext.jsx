@@ -3,55 +3,30 @@ import api from '../services/api';
 import { initMetaPixel, captureAttribution } from '../utils/metaPixel';
 
 const WebsiteDataContext = createContext(null);
-const CACHE_KEY = 'hair_shurokkha_website_data_cache';
-const CACHE_TTL_MS = 10 * 60 * 1000; // 10 minutes cache freshness window
 
 export function WebsiteDataProvider({ children }) {
-  // 1. Synchronously try to hydrate from sessionStorage for zero-latency initial render
-  const [websiteData, setWebsiteData] = useState(() => {
-    try {
-      const cached = sessionStorage.getItem(CACHE_KEY);
-      if (cached) {
-        const parsed = JSON.parse(cached);
-        if (parsed.data && (Date.now() - parsed.timestamp < CACHE_TTL_MS)) {
-          return parsed.data;
-        }
-      }
-    } catch (e) {
-      // Non-blocking sessionStorage error
-    }
-    return null;
-  });
+  const [websiteData, setWebsiteData] = useState(null);
+  const hasDataRef = useRef(false);
 
   const [loading, setLoading] = useState(() => !websiteData);
   const [error, setError] = useState(null);
   const isFetchingRef = useRef(false);
 
-  // 2. Centralized fetch: called exactly ONCE on initial mount
+  // Fetch one shared public document for all storefront components.
   const fetchWebsiteData = useCallback(async (force = false) => {
     if (isFetchingRef.current) return;
     isFetchingRef.current = true;
 
     try {
-      if (!websiteData || force) {
+      if (!hasDataRef.current) {
         setLoading(true);
       }
 
       const res = await api.getWebsiteData(force);
       if (res && res.success && res.data) {
+        hasDataRef.current = true;
         setWebsiteData(res.data);
         setError(null);
-
-        // Update sessionStorage
-        try {
-          sessionStorage.setItem(CACHE_KEY, JSON.stringify({
-            data: res.data,
-            version: res.version,
-            timestamp: Date.now()
-          }));
-        } catch (e) {
-          // Non-blocking
-        }
 
         // Initialize Meta Pixel once data arrives
         const meta = res.data.metaSettings;
@@ -66,7 +41,7 @@ export function WebsiteDataProvider({ children }) {
       setLoading(false);
       isFetchingRef.current = false;
     }
-  }, [websiteData]);
+  }, []);
 
   useEffect(() => {
     // Capture any Facebook attribution cookies or UTM query params immediately
@@ -77,12 +52,19 @@ export function WebsiteDataProvider({ children }) {
     const handleInvalidation = () => {
       fetchWebsiteData(true);
     };
+    const handleVisibility = () => { if (!document.hidden) handleInvalidation(); };
+    const timer = setInterval(() => { if (!document.hidden) handleInvalidation(); }, 15000);
     if (typeof window !== 'undefined') {
       window.addEventListener('website-data-invalidated', handleInvalidation);
+      window.addEventListener('focus', handleInvalidation);
+      document.addEventListener('visibilitychange', handleVisibility);
     }
     return () => {
+      clearInterval(timer);
       if (typeof window !== 'undefined') {
         window.removeEventListener('website-data-invalidated', handleInvalidation);
+        window.removeEventListener('focus', handleInvalidation);
+        document.removeEventListener('visibilitychange', handleVisibility);
       }
     };
   }, [fetchWebsiteData]);

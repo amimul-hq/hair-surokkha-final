@@ -1,80 +1,25 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import dotenv from 'dotenv';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { randomUUID } from 'node:crypto';
+import { drizzle } from 'drizzle-orm/netlify-db';
+import { getDatabase as connectDatabase } from '@netlify/database';
+import { websiteDocuments } from '../../db/schema.ts';
+import { and, eq } from 'drizzle-orm';
 
-dotenv.config();
-
-// Netlify bundles this function as CommonJS, where import.meta.url is absent.
-// Native ESM (local development) instead resolves the directory from the URL.
-const dataModuleDir = typeof __dirname === 'string'
-  ? __dirname
-  : path.dirname(fileURLToPath(import.meta.url));
-
-// Helper to resolve all data storage file paths across local dev, Netlify functions, and production build
-function getAllDataFilePaths() {
-  const possiblePaths = [
-    // 1. Root public/data (Customer storefront static data served by Vite/dist)
-    path.resolve(process.cwd(), 'public', 'data', 'website-data.json'),
-    path.resolve(dataModuleDir, '..', '..', 'public', 'data', 'website-data.json'),
-
-    // 2. Netlify Functions data (Admin panel read/write backend store)
-    path.resolve(dataModuleDir, 'data', 'website-data.json'),
-    path.resolve(process.cwd(), 'netlify', 'functions', 'data', 'website-data.json'),
-
-    // 3. Dist data (Production build output, if dist directory exists)
-    path.resolve(process.cwd(), 'dist', 'data', 'website-data.json'),
-    path.resolve(dataModuleDir, '..', '..', 'dist', 'data', 'website-data.json')
-  ];
-
-  // Return unique absolute normalized paths
-  const unique = [];
-  for (const p of possiblePaths) {
-    const norm = path.normalize(p);
-    if (!unique.includes(norm)) {
-      unique.push(norm);
-    }
-  }
-  return unique;
+// One persisted JSON document. The packaged JSON is only an initial import.
+const moduleDir = typeof __dirname === 'string' ? __dirname : path.dirname(fileURLToPath(import.meta.url));
+let database;
+function getDatabase() {
+  return database ||= drizzle({ client: connectDatabase() });
+}
+function loadInitialData() {
+  const candidates = [path.join(moduleDir, 'data/website-data.json'), path.resolve('netlify/functions/data/website-data.json')];
+  const seedPath = candidates.find(candidate => fs.existsSync(candidate));
+  if (!seedPath) throw new Error('Initial website data is missing');
+  return JSON.parse(fs.readFileSync(seedPath, 'utf8'));
 }
 
-function resolveDataFilePaths() {
-  const candidates = [
-    path.resolve(dataModuleDir, 'data', 'website-data.json'),
-    path.resolve(dataModuleDir, '..', 'data', 'website-data.json'),
-    path.resolve(dataModuleDir, '..', '..', 'public', 'data', 'website-data.json'),
-    path.resolve(dataModuleDir, '..', 'public', 'data', 'website-data.json'),
-    path.resolve(process.cwd(), 'public', 'data', 'website-data.json'),
-    path.resolve(process.cwd(), 'netlify', 'functions', 'data', 'website-data.json'),
-    path.resolve(process.cwd(), 'dist', 'data', 'website-data.json')
-  ];
-
-  let primaryPath = candidates[0];
-  for (const c of candidates) {
-    if (fs.existsSync(c)) {
-      primaryPath = c;
-      break;
-    }
-  }
-
-  // Also support dist directory in production if it exists
-  const distCandidates = [
-    path.resolve(process.cwd(), 'dist', 'data', 'website-data.json'),
-    path.resolve(dataModuleDir, '..', '..', 'dist', 'data', 'website-data.json')
-  ];
-  let distPath = null;
-  for (const dc of distCandidates) {
-    const parentDir = path.dirname(path.dirname(dc));
-    if (fs.existsSync(parentDir)) {
-      distPath = dc;
-      break;
-    }
-  }
-
-  return { primaryPath, distPath };
-}
-
-// Fallback baseline config if JSON file not yet created
 export const defaultWebsiteConfig = {
   _id: "main",
   siteSettings: {
@@ -141,153 +86,12 @@ export const defaultWebsiteConfig = {
 
 export const defaultCategories = [];
 export const defaultProducts = [];
-export const defaultWebsiteData = {
-  ...defaultWebsiteConfig,
-  categories: [],
-  products: [],
-  orders: [],
-  admins: [
-    {
-      _id: "6b0072b9ca8f2dea4a890e9e",
-      username: "admin",
-      password: "$2b$10$xWNdzRLx0KXEz.WRW2FWeurqcgrp73izWEBtS9L9ddIntw1nrMDxC",
-      name: "Store Administrator",
-      role: "superadmin"
-    }
-  ],
-  metaEventLogs: [],
-  version: 1,
-  updatedAt: new Date().toISOString()
-};
 
-// Helper: Extract only common public storefront data (segregates private admin collections)
-export function sanitizePublicWebsiteData(fullData) {
-  if (!fullData) return null;
-  const { orders, admins, metaEventLogs, ...publicSlice } = fullData;
-  const clean = JSON.parse(JSON.stringify(publicSlice));
-  if (clean.metaSettings) {
-    delete clean.metaSettings.capiAccessToken;
-  }
-  return clean;
-}
+export const defaultWebsiteData = { ...defaultWebsiteConfig, categories: [], products: [], orders: [], admins: [], metaEventLogs: [], version: 1 };
 
-/**
- * Local File-Backed JSON Store
- * - Reads from public/data/website-data.json
- * - Synchronously/atomically writes any updates back to disk
- * - Replaces external MongoDB completely with 0ms local latency
- */
-class LocalJsonStore {
-  constructor() {
-    const { primaryPath, distPath } = resolveDataFilePaths();
-    this.filePath = primaryPath;
-    this.distPath = distPath;
-    this.data = this.loadFromDisk();
-  }
-
-  loadFromDisk() {
-    const candidatePaths = getAllDataFilePaths();
-    let bestMasterData = null;
-    let highestMasterVersion = -1;
-    let latestMasterTime = 0;
-    let masterPath = null;
-
-    let bestPublicData = null;
-    let highestPublicVersion = -1;
-    let latestPublicTime = 0;
-
-    for (const p of candidatePaths) {
-      try {
-        if (fs.existsSync(p)) {
-          const raw = fs.readFileSync(p, 'utf8');
-          const parsed = JSON.parse(raw);
-          const ver = typeof parsed.version === 'number' ? parsed.version : 0;
-          const time = parsed.updatedAt ? new Date(parsed.updatedAt).getTime() : 0;
-          const isMasterStore = p.includes('netlify') || p.includes('functions');
-
-          if (isMasterStore) {
-            if (bestMasterData === null || ver > highestMasterVersion || (ver === highestMasterVersion && time > latestMasterTime)) {
-              bestMasterData = parsed;
-              highestMasterVersion = ver;
-              latestMasterTime = time;
-              masterPath = p;
-            }
-          } else {
-            if (bestPublicData === null || ver > highestPublicVersion || (ver === highestPublicVersion && time > latestPublicTime)) {
-              bestPublicData = parsed;
-              highestPublicVersion = ver;
-              latestPublicTime = time;
-            }
-          }
-        }
-      } catch (e) {
-        // Continue checking other candidates
-      }
-    }
-
-    // Merge: Master data retains orders, admins, and metaEventLogs.
-    // If public data has a higher version for common storefront fields, adopt them while keeping private collections.
-    let merged = bestMasterData || bestPublicData || JSON.parse(JSON.stringify(defaultWebsiteData));
-
-    if (bestMasterData && bestPublicData && highestPublicVersion > highestMasterVersion) {
-      const { orders, admins, metaEventLogs } = bestMasterData;
-      merged = {
-        ...bestPublicData,
-        orders: orders || [],
-        admins: admins || [],
-        metaEventLogs: metaEventLogs || []
-      };
-    }
-
-    if (!Array.isArray(merged.categories)) merged.categories = [];
-    if (!Array.isArray(merged.products)) merged.products = [];
-    if (!Array.isArray(merged.orders)) merged.orders = [];
-    if (!Array.isArray(merged.admins) || merged.admins.length === 0) {
-      merged.admins = JSON.parse(JSON.stringify(defaultWebsiteData.admins));
-    }
-    if (!Array.isArray(merged.metaEventLogs)) merged.metaEventLogs = [];
-
-    if (masterPath) this.filePath = masterPath;
-    return merged;
-  }
-
-  saveToDisk() {
-    try {
-      this.data.updatedAt = new Date().toISOString();
-      const masterContent = JSON.stringify(this.data, null, 2);
-      const publicContent = JSON.stringify(sanitizePublicWebsiteData(this.data), null, 2);
-      const targetPaths = getAllDataFilePaths();
-
-      for (const targetPath of targetPaths) {
-        try {
-          const norm = targetPath.toLowerCase();
-          const isDist = norm.includes('dist');
-          const isPublic = norm.includes('public') || isDist;
-          const targetDir = path.dirname(targetPath);
-          const parentDir = path.dirname(targetDir);
-
-          // For dist, only write if dist directory exists (e.g. production build)
-          if (isDist && !fs.existsSync(parentDir)) {
-            continue;
-          }
-
-          if (!fs.existsSync(targetDir)) {
-            fs.mkdirSync(targetDir, { recursive: true });
-          }
-
-          // Segregate: public/dist targets get sanitized public-only data,
-          // while netlify/functions targets get the complete master database.
-          const content = isPublic ? publicContent : masterContent;
-          fs.writeFileSync(targetPath, content, 'utf8');
-        } catch (writeErr) {
-          // Gracefully continue on read-only environments
-        }
-      }
-    } catch (e) {
-      console.error('Error saving data to disk:', e);
-    }
-  }
-
+// A request-local document editor; never used as durable storage.
+class DocumentEditor {
+  constructor(data) { this.data = structuredClone(data); this.dirty = false; }
   // --- Website Data & Config ---
   async getWebsiteData() {
     return this.data;
@@ -304,7 +108,7 @@ class LocalJsonStore {
       }
     }
 
-    const { _id, ...rest } = updateData;
+    const { _id, orders, admins, metaEventLogs, version, updatedAt, ...rest } = updateData;
     this.data = {
       ...this.data,
       ...rest,
@@ -320,7 +124,7 @@ class LocalJsonStore {
     if (!Array.isArray(this.data.admins)) this.data.admins = [];
     if (!Array.isArray(this.data.metaEventLogs)) this.data.metaEventLogs = [];
 
-    this.saveToDisk();
+    this.dirty = true;
     return this.data;
   }
 
@@ -329,7 +133,7 @@ class LocalJsonStore {
   }
 
   async updateWebsiteConfig(updateData) {
-    const { _id, ...rest } = updateData;
+    const { _id, orders, admins, metaEventLogs, version, updatedAt, ...rest } = updateData;
     this.data = {
       ...this.data,
       ...rest,
@@ -337,7 +141,7 @@ class LocalJsonStore {
       version: (this.data.version || 1) + 1,
       updatedAt: new Date().toISOString()
     };
-    this.saveToDisk();
+    this.dirty = true;
     return this.data;
   }
 
@@ -348,14 +152,14 @@ class LocalJsonStore {
 
   async addCategory(cat) {
     const newCat = {
-      _id: cat._id || `cat_${Date.now()}`,
+      _id: cat._id || `cat_${randomUUID()}`,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
       ...cat
     };
     this.data.categories.push(newCat);
     this.data.version = (this.data.version || 1) + 1;
-    this.saveToDisk();
+    this.dirty = true;
     return newCat;
   }
 
@@ -369,7 +173,7 @@ class LocalJsonStore {
         updatedAt: new Date().toISOString()
       };
       this.data.version = (this.data.version || 1) + 1;
-      this.saveToDisk();
+      this.dirty = true;
       return categories[idx];
     }
     return null;
@@ -379,7 +183,7 @@ class LocalJsonStore {
     const categories = this.data.categories || [];
     this.data.categories = categories.filter(c => String(c._id) !== String(idOrSlug) && c.slug !== idOrSlug && c.name !== idOrSlug);
     this.data.version = (this.data.version || 1) + 1;
-    this.saveToDisk();
+    this.dirty = true;
     return true;
   }
 
@@ -413,14 +217,14 @@ class LocalJsonStore {
 
   async addProduct(prod) {
     const newProd = {
-      _id: prod._id || `prod_${Date.now()}`,
+      _id: prod._id || `prod_${randomUUID()}`,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
       ...prod
     };
     this.data.products.unshift(newProd);
     this.data.version = (this.data.version || 1) + 1;
-    this.saveToDisk();
+    this.dirty = true;
     return newProd;
   }
 
@@ -434,7 +238,7 @@ class LocalJsonStore {
         updatedAt: new Date().toISOString()
       };
       this.data.version = (this.data.version || 1) + 1;
-      this.saveToDisk();
+      this.dirty = true;
       return products[idx];
     }
     return null;
@@ -444,7 +248,7 @@ class LocalJsonStore {
     const products = this.data.products || [];
     this.data.products = products.filter(p => String(p._id) !== String(idOrSlug) && p.slug !== idOrSlug);
     this.data.version = (this.data.version || 1) + 1;
-    this.saveToDisk();
+    this.dirty = true;
     return true;
   }
 
@@ -453,7 +257,7 @@ class LocalJsonStore {
     if (p && typeof p.stock === 'number') {
       p.stock = Math.max(0, p.stock - qty);
       p.updatedAt = new Date().toISOString();
-      this.saveToDisk();
+      this.dirty = true;
     }
   }
 
@@ -479,9 +283,22 @@ class LocalJsonStore {
     return orders.find(o => o.orderId === orderIdOrDbId || String(o._id) === String(orderIdOrDbId)) || null;
   }
 
-  async addOrder(order) {
+  async addOrder(order, reserveStock = false) {
+    if (reserveStock) {
+      for (const item of order.items) {
+        const product = await this.getProductBySlug(item.productId || item.slug);
+        if (!product || product.isActive === false || product.salePrice !== item.unitPrice) {
+          throw new Error('A product changed. Please refresh your cart and try again.');
+        }
+        if (typeof product.stock === 'number') {
+          if (product.stock < item.quantity) throw new Error('Insufficient product stock. Please update your cart.');
+          product.stock -= item.quantity;
+          product.updatedAt = new Date().toISOString();
+        }
+      }
+    }
     const newOrder = {
-      _id: order._id || `ord_${Date.now()}`,
+      _id: order._id || `ord_${randomUUID()}`,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
       statusHistory: [
@@ -495,7 +312,7 @@ class LocalJsonStore {
       ...order
     };
     this.data.orders.unshift(newOrder);
-    this.saveToDisk();
+    this.dirty = true;
     return newOrder;
   }
 
@@ -515,14 +332,14 @@ class LocalJsonStore {
       note: note || `Status updated to ${status}`,
       updatedBy: adminUser
     });
-    this.saveToDisk();
+    this.dirty = true;
     return order;
   }
 
   async deleteOrder(orderIdOrDbId) {
     const orders = this.data.orders || [];
     this.data.orders = orders.filter(o => o.orderId !== orderIdOrDbId && String(o._id) !== String(orderIdOrDbId));
-    this.saveToDisk();
+    this.dirty = true;
     return true;
   }
 
@@ -605,7 +422,7 @@ class LocalJsonStore {
     if (this.data.metaEventLogs.length > MAX_LOGS) {
       this.data.metaEventLogs = this.data.metaEventLogs.slice(0, MAX_LOGS);
     }
-    this.saveToDisk();
+    this.dirty = true;
     return newLog;
   }
 
@@ -613,7 +430,7 @@ class LocalJsonStore {
     const log = await this.getMetaLogById(id);
     if (!log) return null;
     Object.assign(log, updateData, { updatedAt: new Date().toISOString() });
-    this.saveToDisk();
+    this.dirty = true;
     return log;
   }
 
@@ -627,19 +444,47 @@ class LocalJsonStore {
       logs = [];
     }
     this.data.metaEventLogs = logs;
-    this.saveToDisk();
+    this.dirty = true;
     return { deletedCount: initialCount - logs.length };
   }
 }
 
-export const localJsonStore = new LocalJsonStore();
-export const memoryStore = localJsonStore;
 
-// Resilient DB status indicator (pure local JSON store, zero external DB dependencies)
+export function createWebsiteStore(getDb = getDatabase, loadSeed = loadInitialData) {
+  async function readDocument(db) {
+    let [row] = await db.select().from(websiteDocuments).where(eq(websiteDocuments.id, 'main'));
+    if (!row) {
+      await db.insert(websiteDocuments).values({ id: 'main', data: loadSeed(), revision: 1 }).onConflictDoNothing();
+      [row] = await db.select().from(websiteDocuments).where(eq(websiteDocuments.id, 'main'));
+    }
+    return row;
+  }
+  return Object.fromEntries(Object.getOwnPropertyNames(DocumentEditor.prototype)
+    .filter(name => name !== 'constructor')
+    .map(name => [name, async (...args) => {
+      const db = getDb();
+      // Compare-and-swap protects updates across concurrent Netlify instances.
+      for (let attempt = 0; attempt < 20; attempt++) {
+        const row = await readDocument(db);
+        const editor = new DocumentEditor(row.data);
+        const result = await editor[name](...args);
+        if (!editor.dirty) return result;
+        editor.data.version = (row.data.version || 1) + 1;
+        editor.data.updatedAt = new Date().toISOString();
+        const changed = await db.update(websiteDocuments)
+          .set({ data: editor.data, revision: row.revision + 1 })
+          .where(and(eq(websiteDocuments.id, 'main'), eq(websiteDocuments.revision, row.revision)))
+          .returning({ id: websiteDocuments.id });
+        if (changed.length) return result;
+      }
+      throw new Error('Website data is busy. Please retry the update.');
+    }]));
+}
+
+// Keep existing callers compatible while all reads/writes use Netlify Database.
+export const localJsonStore = createWebsiteStore();
+export const memoryStore = localJsonStore;
 export async function connectToDatabase() {
-  return {
-    isConnected: false,
-    mode: 'local_json',
-    filePath: localJsonStore.filePath
-  };
+  await localJsonStore.getWebsiteData();
+  return { isConnected: true, mode: 'netlify_database' };
 }
