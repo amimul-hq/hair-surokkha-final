@@ -32,6 +32,7 @@ if (process.env.CLOUDINARY_CLOUD_NAME && process.env.CLOUDINARY_API_KEY && proce
 
 // Middleware
 app.use(cors());
+app.use((req, res, next) => { res.set('Cache-Control', 'no-store'); next(); });
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
@@ -102,7 +103,7 @@ app.get('/api/health', async (req, res) => {
   });
 });
 
-// GET /api/website-data - Retrieve complete consolidated public website dataset in ONE request from local JSON
+// GET /api/website-data - Retrieve complete consolidated public website dataset in ONE request from the shared database
 app.get('/api/website-data', async (req, res) => {
   try {
     const websiteData = await localJsonStore.getWebsiteData();
@@ -112,7 +113,7 @@ app.get('/api/website-data', async (req, res) => {
 
     res.set({
       'Content-Type': 'application/json',
-      'Cache-Control': 'public, max-age=60, s-maxage=120, stale-while-revalidate=300',
+      'Cache-Control': 'no-store',
       'ETag': etag
     });
 
@@ -132,18 +133,14 @@ app.get('/api/website-data', async (req, res) => {
     });
   } catch (err) {
     console.error('Error fetching centralized website data:', err);
-    return res.json({
-      success: true,
-      version: 1,
-      data: sanitizePublicWebsiteData(defaultWebsiteData)
-    });
+    return res.status(503).json({ success: false, message: 'Website data is temporarily unavailable. Please retry.' });
   }
 });
 
-// GET /api/site-config - Retrieve full website configuration for public rendering (backed by local JSON)
+// GET /api/site-config - Retrieve full website configuration for public rendering (backed by the shared database)
 app.get('/api/site-config', async (req, res) => {
   try {
-    res.set('Cache-Control', 'public, max-age=60, s-maxage=120, stale-while-revalidate=300');
+    res.set('Cache-Control', 'no-store');
     const websiteData = await localJsonStore.getWebsiteConfig();
     const sanitized = sanitizePublicWebsiteData(websiteData);
     if (!sanitized.metaSettings) sanitized.metaSettings = {};
@@ -151,14 +148,14 @@ app.get('/api/site-config', async (req, res) => {
     return res.json({ success: true, data: sanitized });
   } catch (err) {
     console.error('Error fetching site config:', err);
-    return res.json({ success: true, data: sanitizePublicWebsiteData(defaultWebsiteData) });
+    return res.status(503).json({ success: false, message: 'Website data is temporarily unavailable.' });
   }
 });
 
-// GET /api/categories - Retrieve active product categories (backed by local JSON)
+// GET /api/categories - Retrieve active product categories (backed by the shared database)
 app.get('/api/categories', async (req, res) => {
   try {
-    res.set('Cache-Control', 'public, max-age=60, s-maxage=120, stale-while-revalidate=300');
+    res.set('Cache-Control', 'no-store');
     const categories = await localJsonStore.getCategories();
     const active = categories
       .filter(c => c.isActive !== false)
@@ -166,14 +163,14 @@ app.get('/api/categories', async (req, res) => {
     return res.json({ success: true, data: active });
   } catch (err) {
     console.error('Error fetching categories:', err);
-    return res.json({ success: true, data: defaultCategories });
+    return res.status(503).json({ success: false, message: 'Categories are temporarily unavailable.' });
   }
 });
 
-// GET /api/products - Retrieve products with search, category filtering & sorting (backed by local JSON)
+// GET /api/products - Retrieve products with search, category filtering & sorting (backed by the shared database)
 app.get('/api/products', async (req, res) => {
   try {
-    res.set('Cache-Control', 'public, max-age=60, s-maxage=120, stale-while-revalidate=300');
+    res.set('Cache-Control', 'no-store');
     const { category, search, featured, sort } = req.query;
     let allProducts = await localJsonStore.getProducts();
 
@@ -202,14 +199,14 @@ app.get('/api/products', async (req, res) => {
     return res.json({ success: true, data: filtered, count: filtered.length });
   } catch (err) {
     console.error('Error fetching products:', err);
-    return res.json({ success: true, data: defaultProducts, count: defaultProducts.length });
+    return res.status(503).json({ success: false, message: 'Products are temporarily unavailable.' });
   }
 });
 
-// GET /api/products/:slug - Retrieve single product details (backed by local JSON)
+// GET /api/products/:slug - Retrieve single product details (backed by the shared database)
 app.get('/api/products/:slug', async (req, res) => {
   try {
-    res.set('Cache-Control', 'public, max-age=60, s-maxage=120, stale-while-revalidate=300');
+    res.set('Cache-Control', 'no-store');
     const { slug } = req.params;
     const product = await localJsonStore.getProductBySlug(slug);
 
@@ -224,7 +221,7 @@ app.get('/api/products/:slug', async (req, res) => {
   }
 });
 
-// POST /api/orders - Public Order Creation with Server-Side Price & Stock Verification against local JSON
+// POST /api/orders - Public Order Creation with Server-Side Price & Stock Verification against the shared database
 app.post('/api/orders', async (req, res) => {
   try {
     const { customer, items, attribution, metaEventId } = req.body;
@@ -243,7 +240,7 @@ app.post('/api/orders', async (req, res) => {
       });
     }
 
-    // 1. Fetch current delivery fee settings & product stock from centralized local JSON
+    // 1. Fetch current delivery fee settings & product stock from centralized database
     const websiteData = await localJsonStore.getWebsiteData();
     const deliverySettings = websiteData.deliverySettings || defaultWebsiteConfig.deliverySettings;
     const siteMeta = websiteData.metaSettings || defaultWebsiteConfig.metaSettings;
@@ -253,7 +250,7 @@ app.post('/api/orders', async (req, res) => {
       ? (deliverySettings.insideDhakaFee ?? 70)
       : (deliverySettings.outsideDhakaFee ?? 130);
 
-    // 2. Fetch official product details from local JSON and calculate verified subtotal
+    // 2. Fetch official product details from the shared database and calculate verified subtotal
     let verifiedItems = [];
     let calculatedSubtotal = 0;
 
@@ -290,8 +287,7 @@ app.post('/api/orders', async (req, res) => {
         itemTotal: itemTotal
       });
 
-      // Safely decrement stock in local store
-      await localJsonStore.decrementStock(productDoc.slug || productDoc._id, requestedQty);
+
     }
 
     const discount = 0;
@@ -346,7 +342,7 @@ app.post('/api/orders', async (req, res) => {
       metaEventId: metaEventId || `order_${orderId}`
     };
 
-    const createdOrder = await localJsonStore.addOrder(orderPayload);
+    const createdOrder = await localJsonStore.addOrder(orderPayload, true);
 
     // 4. Trigger Server-Side Meta Conversions API (CAPI) Purchase Event
     const isCapiActive = siteMeta?.isCapiEnabled !== false;
@@ -586,7 +582,7 @@ app.get('/api/admin/dashboard', requireAdmin, async (req, res) => {
         },
         topSelling,
         recentOrders: orders.slice(0, 8),
-        databaseMode: 'local_json'
+        databaseMode: 'netlify_database'
       }
     });
   } catch (err) {
@@ -596,7 +592,7 @@ app.get('/api/admin/dashboard', requireAdmin, async (req, res) => {
 });
 
 // =========================================================================
-// 3. ADMIN PRODUCT MANAGEMENT (Backed by local JSON store)
+// 3. ADMIN PRODUCT MANAGEMENT (Backed by the shared database store)
 // =========================================================================
 
 app.get('/api/admin/products', requireAdmin, async (req, res) => {
@@ -691,7 +687,7 @@ app.delete('/api/admin/products/:id', requireAdmin, async (req, res) => {
 });
 
 // =========================================================================
-// 4. ADMIN CATEGORY MANAGEMENT (Backed by local JSON store)
+// 4. ADMIN CATEGORY MANAGEMENT (Backed by the shared database store)
 // =========================================================================
 
 app.get('/api/admin/categories', requireAdmin, async (req, res) => {
@@ -765,7 +761,7 @@ app.delete('/api/admin/categories/:id', requireAdmin, async (req, res) => {
 });
 
 // =========================================================================
-// 5. ADMIN ORDER MANAGEMENT (Backed by local JSON store)
+// 5. ADMIN ORDER MANAGEMENT (Backed by the shared database store)
 // =========================================================================
 
 app.get('/api/admin/orders', requireAdmin, async (req, res) => {
@@ -927,7 +923,7 @@ app.post('/api/admin/orders', requireAdmin, async (req, res) => {
 });
 
 // =========================================================================
-// 6. ADMIN CENTRALIZED WEBSITE DATA & CMS CONFIGURATION (Backed by local JSON)
+// 6. ADMIN CENTRALIZED WEBSITE DATA & CMS CONFIGURATION (Backed by the shared database)
 // =========================================================================
 
 // GET /api/admin/website-data - Full document read for Admin CMS
@@ -935,6 +931,9 @@ app.get('/api/admin/website-data', requireAdmin, async (req, res) => {
   try {
     const data = await localJsonStore.getWebsiteData();
     const cloned = JSON.parse(JSON.stringify(data));
+    delete cloned.admins;
+    delete cloned.orders;
+    delete cloned.metaEventLogs;
     if (!cloned.metaSettings) cloned.metaSettings = {};
     cloned.metaSettings.pixelId = process.env.META_PIXEL_ID || '';
     return res.json({ success: true, version: cloned.version || 1, data: cloned });
@@ -960,9 +959,9 @@ app.put('/api/admin/website-data', requireAdmin, async (req, res) => {
 
     return res.json({
       success: true,
-      message: 'Website data updated successfully (saved to local JSON)',
+      message: 'Website data updated successfully (saved to the shared database)',
       version: updated.version,
-      data: updated
+      data: sanitizePublicWebsiteData(updated)
     });
   } catch (err) {
     if (err.conflict) {
@@ -982,6 +981,9 @@ app.get('/api/admin/site-config', requireAdmin, async (req, res) => {
   try {
     const config = await localJsonStore.getWebsiteConfig();
     const cloned = JSON.parse(JSON.stringify(config));
+    delete cloned.admins;
+    delete cloned.orders;
+    delete cloned.metaEventLogs;
     if (!cloned.metaSettings) cloned.metaSettings = {};
     cloned.metaSettings.pixelId = process.env.META_PIXEL_ID || '';
     cloned.metaSettings.isCapiConfigured = Boolean(process.env.META_CAPI_ACCESS_TOKEN);
@@ -1007,7 +1009,7 @@ app.put('/api/admin/site-config', requireAdmin, async (req, res) => {
     return res.json({
       success: true,
       message: 'Website configuration updated successfully!',
-      data: savedConfig
+      data: sanitizePublicWebsiteData(savedConfig)
     });
   } catch (err) {
     console.error('Error saving website config:', err);
@@ -1054,7 +1056,7 @@ app.post('/api/upload', requireAdmin, async (req, res) => {
 });
 
 // =========================================================================
-// 8. ADMIN META CAPI EVENT LOGS MANAGEMENT (Backed by local JSON store)
+// 8. ADMIN META CAPI EVENT LOGS MANAGEMENT (Backed by the shared database store)
 // =========================================================================
 
 // GET /api/admin/meta/verify-connection - Test Meta Graph API connection with .env credentials

@@ -23,7 +23,7 @@ apiClient.interceptors.request.use((config) => {
 
 // =========================================================================
 // Client-Side In-Memory Cache & In-Flight Request Deduplication
-// - Eliminates repetitive MongoDB database hits on internal page navigation
+// - Avoids repetitive API requests on internal page navigation
 // - Delivers instant (0ms) page switches for customers
 // - Deduplicates concurrent calls from multiple components (e.g. Navbar + Home)
 // - Automatically invalidates cache whenever Admin creates/edits/deletes items
@@ -86,35 +86,12 @@ export const api = {
   // Public Cache Utilities
   clearCache: clearApiCache,
 
-  // Centralized Public Website Data API (Consolidated ONE fetch backed by local JSON)
+  // Centralized Public Website Data API (One fetch from the shared persistent document)
   getWebsiteData: async (force = false) => {
     return getCachedOrFetch('website-data', async () => {
-      // 1. First attempt to load directly from local JSON file (/data/website-data.json)
-      try {
-        const query = force ? `?t=${Date.now()}` : '';
-        const localRes = await axios.get(`/data/website-data.json${query}`, {
-          headers: {
-            'Cache-Control': 'no-cache, no-store, must-revalidate',
-            'Pragma': 'no-cache'
-          }
-        });
-        if (localRes.data && (localRes.data.categories || localRes.data.products || localRes.data.siteSettings)) {
-          const payload = JSON.parse(JSON.stringify(localRes.data));
-          if (!payload.metaSettings) payload.metaSettings = {};
-          payload.metaSettings.pixelId = import.meta.env?.VITE_META_PIXEL_ID || process.env?.META_PIXEL_ID || payload.metaSettings.pixelId || '';
-          return {
-            success: true,
-            version: payload.version || 1,
-            updatedAt: payload.updatedAt,
-            data: payload
-          };
-        }
-      } catch (err) {
-        // Fallback to /api/website-data if static file isn't directly reachable
-      }
       const res = await apiClient.get('/website-data');
       return res.data;
-    }, 5 * 60 * 1000, force);
+    }, 0, force);
   },
 
   // Public APIs with Caching (Backed by centralized cache)

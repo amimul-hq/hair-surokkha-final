@@ -1,16 +1,8 @@
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
-dotenv.config();
+import 'dotenv/config';
+import { localJsonStore } from '../netlify/functions/db.js';
 
 async function fixData() {
-  await mongoose.connect(process.env.MONGODB_URI);
-  const col = mongoose.connection.collection('website_data');
-  const doc = await col.findOne({ _id: 'main' });
-  if (!doc) {
-    console.log('No main doc');
-    return process.exit(0);
-  }
-
+  const doc = await localJsonStore.getWebsiteData();
   // Set default images if missing and serial numbers for categories
   const categoryImages = {
     'minoxidil': 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=80',
@@ -49,23 +41,6 @@ async function fixData() {
     };
   });
 
-  await col.updateOne(
-    { _id: 'main' },
-    {
-      $set: {
-        categories: updatedCategories,
-        products: updatedProducts,
-        updatedAt: new Date()
-      },
-      $inc: { version: 1 }
-    }
-  );
-
-  console.log('✅ Updated categories & products with clean images and serial orders!');
-  await mongoose.disconnect();
+  await localJsonStore.updateWebsiteData({ categories: updatedCategories, products: updatedProducts }, doc.version);
 }
-
-fixData().catch(e => {
-  console.error(e);
-  process.exit(1);
-});
+fixData();
