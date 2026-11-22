@@ -35,6 +35,17 @@
       "updatedAt": "2026-11-21T18:28:05.957Z"
     },
     {
+      "_id": "6b0072b8ca8f2dea4a890e17",
+      "name": "Scalp Care & Accessories",
+      "slug": "scalp-care",
+      "description": "Silicone scalp massagers, sanitizing sprays, and precision calibrated droppers.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcwOPBl8_JgtCSo5g5PTLol3RQlsYRb2YU-LSn0prrCw&s=10",
+      "isActive": true,
+      "displayOrder": 3,
+      "createdAt": "2026-11-20T16:18:00.640Z",
+      "updatedAt": "2026-11-22T08:40:36.797Z"
+    },
+    {
       "_id": "cat_1795204139933",
       "name": "Scalp care Oil",
       "slug": "scalp-care-oil",
@@ -44,17 +55,6 @@
       "displayOrder": 5,
       "createdAt": "2026-11-20T19:48:59.933Z",
       "updatedAt": "2026-11-22T08:40:31.018Z"
-    },
-    {
-      "_id": "6b0072b8ca8f2dea4a890e17",
-      "name": "Scalp Care & Accessories",
-      "slug": "scalp-care",
-      "description": "Silicone scalp massagers, sanitizing sprays, and precision calibrated droppers.",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcwOPBl8_JgtCSo5g5PTLol3RQlsYRb2YU-LSn0prrCw&s=10",
-      "isActive": true,
-      "displayOrder": 54,
-      "createdAt": "2026-11-20T16:18:00.640Z",
-      "updatedAt": "2026-11-22T08:40:36.797Z"
     }
   ],
   "deliverySettings": {
@@ -125,7 +125,7 @@
   },
   "hero": {
     "badge": "100% Authentic Guaranteed",
-    "title": "Science-Backed Hair Restoration & Scalp Wellness",
+    "title": "Science-Backed Scalp Restoration BD",
     "subtitle": "Reactivate dormant hair follicles, increase scalp blood microcirculation, and reclaim thicker hair with dermatologically proven Minoxidil 5% and micro-needling systems.",
     "primaryBtnText": "Shop Now",
     "primaryBtnLink": "/shop",
@@ -355,7 +355,7 @@
       "category": "Minoxidil",
       "regularPrice": 3750,
       "salePrice": 2490,
-      "stock": 47,
+      "stock": 46,
       "isFeatured": true,
       "isActive": true,
       "productType": "minoxidil",
@@ -394,7 +394,7 @@
       ],
       "carouselOrder": 4,
       "createdAt": "2026-11-20T16:18:01.045Z",
-      "updatedAt": "2026-11-21T23:58:44.915Z",
+      "updatedAt": "2026-11-22T13:30:00.225Z",
       "displayOrder": 4
     },
     {
@@ -510,7 +510,7 @@
       "category": "Minoxidil",
       "regularPrice": 1250,
       "salePrice": 830,
-      "stock": 27,
+      "stock": 23,
       "isFeatured": true,
       "isActive": true,
       "productType": "minoxidil",
@@ -520,7 +520,7 @@
       "specifications": [],
       "carouselOrder": 0,
       "createdAt": "2026-11-20T18:37:07.958Z",
-      "updatedAt": "2026-11-22T09:17:40.196Z",
+      "updatedAt": "2026-11-22T13:16:01.666Z",
       "displayOrder": 0
     },
     {
@@ -588,7 +588,7 @@
       "category": "Minoxidil",
       "regularPrice": 2500,
       "salePrice": 1600,
-      "stock": 48,
+      "stock": 47,
       "isFeatured": true,
       "isActive": true,
       "productType": "minoxidil",
@@ -599,7 +599,7 @@
       "displayOrder": 2,
       "carouselOrder": 2,
       "createdAt": "2026-11-21T10:57:37.132Z",
-      "updatedAt": "2026-11-21T23:58:44.908Z"
+      "updatedAt": "2026-11-22T13:25:52.570Z"
     }
   ],
   "sections": {
@@ -802,9 +802,251 @@
     "whatsappNumber": "+8801356813069",
     "address": "Sonirakra, Dhonia, Dhaka 1236"
   },
-  "updatedAt": "2026-11-22T09:17:41.465Z",
-  "version": 204,
+  "updatedAt": "2026-11-22T13:30:00.770Z",
+  "version": 208,
   "orders": [
+    {
+      "_id": "ord_1795354200233",
+      "createdAt": "2026-11-22T13:30:00.233Z",
+      "updatedAt": "2026-11-22T13:30:00.233Z",
+      "statusHistory": [
+        {
+          "status": "Pending",
+          "timestamp": "2026-11-22T13:30:00.233Z",
+          "note": "Order placed by customer via Cash on Delivery",
+          "updatedBy": "System"
+        }
+      ],
+      "orderId": "HAIR-2611-FK6L",
+      "orderNumber": "HAIR-2611-FK6L",
+      "customer": {
+        "fullName": "Amimul Haque",
+        "phoneNumber": "01712345678",
+        "district": "Dhaka",
+        "deliveryArea": "inside_dhaka",
+        "address": "cxzfdsfdsfdsa",
+        "notes": ""
+      },
+      "items": [
+        {
+          "productId": "6b0072b9ca8f2dea4a890e29",
+          "productName": "Kirkland Minoxidil 5% – 3 Bottle Pack (90 Days Supply)",
+          "slug": "3-month-intensive-minoxidil-pack",
+          "category": "Minoxidil",
+          "image": "https://res.cloudinary.com/wvd1wcrw/image/upload/v1795256456/imresizer-resize-_main_Kirkland_Minoxidil_Trio_Product_Display.webp",
+          "unitPrice": 2490,
+          "quantity": 1,
+          "itemTotal": 2490
+        }
+      ],
+      "subtotal": 2490,
+      "discount": 0,
+      "deliveryCharge": 70,
+      "finalTotal": 2560,
+      "paymentMethod": "COD",
+      "orderStatus": "Pending",
+      "attribution": {
+        "fbp": "",
+        "fbc": "",
+        "fbcSource": "none",
+        "fbclid": "",
+        "utmSource": "",
+        "utmMedium": "",
+        "utmCampaign": "",
+        "utmContent": "",
+        "utmTerm": "",
+        "landingPage": "http://localhost:3000/admin/meta",
+        "referrer": "http://localhost:3000/admin/meta",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+        "ip": ""
+      },
+      "metaEventId": "order_HAIR-2611-FK6L"
+    },
+    {
+      "_id": "ord_1795353952579",
+      "createdAt": "2026-11-22T13:25:52.579Z",
+      "updatedAt": "2026-11-22T13:25:52.579Z",
+      "statusHistory": [
+        {
+          "status": "Pending",
+          "timestamp": "2026-11-22T13:25:52.578Z",
+          "note": "Order placed by customer via Cash on Delivery",
+          "updatedBy": "System"
+        }
+      ],
+      "orderId": "HAIR-2611-8LTM",
+      "orderNumber": "HAIR-2611-8LTM",
+      "customer": {
+        "fullName": "Amimul Haque",
+        "phoneNumber": "01712345678",
+        "district": "Dhaka",
+        "deliveryArea": "inside_dhaka",
+        "address": "cxzfdsfdsfdsa",
+        "notes": ""
+      },
+      "items": [
+        {
+          "productId": "prod_1795258657132",
+          "productName": "Kirkland Minoxidil 5% – 2 Bottle Pack (60 Days Supply)",
+          "slug": "2-month-intensive-hair-regrowth-pack-2x-minoxidil-5",
+          "category": "Minoxidil",
+          "image": "https://res.cloudinary.com/wvd1wcrw/image/upload/v1795258412/imresizer-resize-Kirkland_Minoxidil_Bottles_Studio_Shot.webp",
+          "unitPrice": 1600,
+          "quantity": 1,
+          "itemTotal": 1600
+        }
+      ],
+      "subtotal": 1600,
+      "discount": 0,
+      "deliveryCharge": 70,
+      "finalTotal": 1670,
+      "paymentMethod": "COD",
+      "orderStatus": "Pending",
+      "attribution": {
+        "fbp": "",
+        "fbc": "",
+        "fbcSource": "none",
+        "fbclid": "",
+        "utmSource": "",
+        "utmMedium": "",
+        "utmCampaign": "",
+        "utmContent": "",
+        "utmTerm": "",
+        "landingPage": "http://localhost:3000/admin/meta",
+        "referrer": "http://localhost:3000/admin/meta",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+        "ip": ""
+      },
+      "metaEventId": "order_HAIR-2611-8LTM"
+    },
+    {
+      "_id": "ord_1795353361676",
+      "createdAt": "2026-11-22T13:16:01.676Z",
+      "updatedAt": "2026-11-22T13:16:04.536Z",
+      "statusHistory": [
+        {
+          "status": "Pending",
+          "timestamp": "2026-11-22T13:16:01.676Z",
+          "note": "Order placed by customer via Cash on Delivery",
+          "updatedBy": "System"
+        },
+        {
+          "status": "Confirmed",
+          "timestamp": "2026-11-22T13:16:04.536Z",
+          "note": "Customer confirmed via phone call",
+          "updatedBy": "admin"
+        }
+      ],
+      "orderId": "HAIR-2611-368D",
+      "orderNumber": "HAIR-2611-368D",
+      "customer": {
+        "fullName": "Shakib Al Hasan",
+        "phoneNumber": "01712345678",
+        "district": "Dhaka",
+        "deliveryArea": "inside_dhaka",
+        "address": "House 12, Road 4, Banani, Dhaka",
+        "notes": ""
+      },
+      "items": [
+        {
+          "productId": "prod_1795199827958",
+          "productName": "Kirkland Minoxidil 5% Extra Strength – Topical Hair Regrowth Solution (60ml)",
+          "slug": "original-kirkland-5-60ml",
+          "category": "Minoxidil",
+          "image": "https://res.cloudinary.com/wvd1wcrw/image/upload/v1795255189/imresizer-resize-image-Picsart-AiImageEnhancer.webp",
+          "unitPrice": 830,
+          "quantity": 2,
+          "itemTotal": 1660
+        }
+      ],
+      "subtotal": 1660,
+      "discount": 0,
+      "deliveryCharge": 70,
+      "finalTotal": 1730,
+      "paymentMethod": "COD",
+      "orderStatus": "Confirmed",
+      "attribution": {
+        "fbp": "",
+        "fbc": "",
+        "fbcSource": "none",
+        "fbclid": "test_fbclid_12345",
+        "utmSource": "facebook",
+        "utmMedium": "",
+        "utmCampaign": "winter_minoxidil_sale",
+        "utmContent": "",
+        "utmTerm": "",
+        "landingPage": "",
+        "referrer": "",
+        "userAgent": "node",
+        "ip": ""
+      },
+      "metaEventId": "order_HAIR-2611-368D",
+      "internalNotes": "Steadfast Courier Booking #987654"
+    },
+    {
+      "_id": "ord_1795353329935",
+      "createdAt": "2026-11-22T13:15:29.935Z",
+      "updatedAt": "2026-11-22T13:15:37.459Z",
+      "statusHistory": [
+        {
+          "status": "Pending",
+          "timestamp": "2026-11-22T13:15:29.934Z",
+          "note": "Order placed by customer via Cash on Delivery",
+          "updatedBy": "System"
+        },
+        {
+          "status": "Confirmed",
+          "timestamp": "2026-11-22T13:15:37.459Z",
+          "note": "Customer confirmed via phone call",
+          "updatedBy": "admin"
+        }
+      ],
+      "orderId": "HAIR-2611-7JM2",
+      "orderNumber": "HAIR-2611-7JM2",
+      "customer": {
+        "fullName": "Shakib Al Hasan",
+        "phoneNumber": "01712345678",
+        "district": "Dhaka",
+        "deliveryArea": "inside_dhaka",
+        "address": "House 12, Road 4, Banani, Dhaka",
+        "notes": ""
+      },
+      "items": [
+        {
+          "productId": "prod_1795199827958",
+          "productName": "Kirkland Minoxidil 5% Extra Strength – Topical Hair Regrowth Solution (60ml)",
+          "slug": "original-kirkland-5-60ml",
+          "category": "Minoxidil",
+          "image": "https://res.cloudinary.com/wvd1wcrw/image/upload/v1795255189/imresizer-resize-image-Picsart-AiImageEnhancer.webp",
+          "unitPrice": 830,
+          "quantity": 2,
+          "itemTotal": 1660
+        }
+      ],
+      "subtotal": 1660,
+      "discount": 0,
+      "deliveryCharge": 70,
+      "finalTotal": 1730,
+      "paymentMethod": "COD",
+      "orderStatus": "Confirmed",
+      "attribution": {
+        "fbp": "",
+        "fbc": "",
+        "fbcSource": "none",
+        "fbclid": "test_fbclid_12345",
+        "utmSource": "facebook",
+        "utmMedium": "",
+        "utmCampaign": "winter_minoxidil_sale",
+        "utmContent": "",
+        "utmTerm": "",
+        "landingPage": "",
+        "referrer": "",
+        "userAgent": "node",
+        "ip": ""
+      },
+      "metaEventId": "order_HAIR-2611-7JM2",
+      "internalNotes": "Steadfast Courier Booking #987654"
+    },
     {
       "_id": "ord_1795310703081",
       "createdAt": "2026-11-22T01:25:03.081Z",
@@ -2188,6 +2430,3764 @@
     }
   ],
   "metaEventLogs": [
+    {
+      "_id": "log_1795354200397_kendx",
+      "createdAt": "2026-11-22T13:30:00.397Z",
+      "updatedAt": "2026-11-22T13:30:00.770Z",
+      "eventId": "pageview_1795354200374_i0ds6ai",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/order-success/HAIR-2611-FK6L",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795354200,
+              "event_id": "pageview_1795354200374_i0ds6ai",
+              "event_source_url": "http://localhost:3000/order-success/HAIR-2611-FK6L",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:30:00.397Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AeQvi5M6LmJWRp4C2SxFn-X",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"AeQvi5M6LmJWRp4C2SxFn-X\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "AeQvi5M6LmJWRp4C2SxFn-X"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 373,
+      "completedAt": "2026-11-22T13:30:00.770Z"
+    },
+    {
+      "_id": "log_1795354200342_nbwh6",
+      "createdAt": "2026-11-22T13:30:00.342Z",
+      "updatedAt": "2026-11-22T13:30:00.631Z",
+      "eventId": "order_HAIR-2611-FK6L",
+      "eventName": "Purchase",
+      "orderId": "HAIR-2611-FK6L",
+      "eventSource": "server_order",
+      "eventSourceUrl": "http://localhost:3000/admin/meta",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": true,
+        "hasEmail": false,
+        "hasCity": true,
+        "hasCountry": true,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent",
+          "ph",
+          "ct",
+          "country"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "em"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "Purchase",
+              "event_time": 1795354200,
+              "event_id": "order_HAIR-2611-FK6L",
+              "event_source_url": "http://localhost:3000/admin/meta",
+              "action_source": "website",
+              "user_data": {
+                "ph": [
+                  "c327520f85b0c6058fed05dfc0a63d8755f325b6ea1b550824f4a8e380d75de1"
+                ],
+                "fn": [
+                  "424ae4deb1b45373852f9a59e8a2a6d8b4f32e32161eecdac1985d79cbe1e8af"
+                ],
+                "ln": [
+                  "234965409e3e1169b6f72b7f1291bb6b20bf4db8b8d02c9300bedea3194529bd"
+                ],
+                "ct": [
+                  "de90643718108ec9a93cc6905f2b976297505a8abeac37b747132877fb32fb8d"
+                ],
+                "country": [
+                  "5e657ff6158d3e2a6d23e2a523917a2305acee9423365e268695c4b7b8919f4c"
+                ],
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              },
+              "custom_data": {
+                "currency": "BDT",
+                "value": 2560,
+                "order_id": "HAIR-2611-FK6L",
+                "content_name": "Order Purchase",
+                "content_type": "product",
+                "content_category": "Minoxidil",
+                "content_categories": [
+                  "Minoxidil"
+                ],
+                "contents": [
+                  {
+                    "id": "6b0072b9ca8f2dea4a890e29",
+                    "quantity": 1,
+                    "item_price": 2490,
+                    "category": "Minoxidil"
+                  }
+                ],
+                "num_items": 1
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:30:00.342Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AFfeahhEsOj8j5nIiEOBS_2",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"AFfeahhEsOj8j5nIiEOBS_2\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "AFfeahhEsOj8j5nIiEOBS_2"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 289,
+      "completedAt": "2026-11-22T13:30:00.631Z"
+    },
+    {
+      "_id": "log_1795354197263_qqx1a",
+      "createdAt": "2026-11-22T13:29:57.263Z",
+      "updatedAt": "2026-11-22T13:29:57.717Z",
+      "eventId": "initiatecheckout_1795354197230_6jfd20k",
+      "eventName": "InitiateCheckout",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/checkout",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": true,
+        "hasEmail": false,
+        "hasCity": true,
+        "hasCountry": true,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent",
+          "ph",
+          "ct",
+          "country"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "em"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "InitiateCheckout",
+              "event_time": 1795354197,
+              "event_id": "initiatecheckout_1795354197230_6jfd20k",
+              "event_source_url": "http://localhost:3000/checkout",
+              "action_source": "website",
+              "user_data": {
+                "ph": [
+                  "c327520f85b0c6058fed05dfc0a63d8755f325b6ea1b550824f4a8e380d75de1"
+                ],
+                "fn": [
+                  "424ae4deb1b45373852f9a59e8a2a6d8b4f32e32161eecdac1985d79cbe1e8af"
+                ],
+                "ct": [
+                  "de90643718108ec9a93cc6905f2b976297505a8abeac37b747132877fb32fb8d"
+                ],
+                "country": [
+                  "5e657ff6158d3e2a6d23e2a523917a2305acee9423365e268695c4b7b8919f4c"
+                ],
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              },
+              "custom_data": {
+                "content_name": "Cart Checkout",
+                "content_category": "Minoxidil",
+                "content_categories": [
+                  "Minoxidil"
+                ],
+                "content_ids": [
+                  "6b0072b9ca8f2dea4a890e29"
+                ],
+                "contents": [
+                  {
+                    "id": "6b0072b9ca8f2dea4a890e29",
+                    "quantity": 1,
+                    "item_price": 2490,
+                    "category": "Minoxidil"
+                  }
+                ],
+                "content_type": "product",
+                "num_items": 1,
+                "value": 2490,
+                "currency": "BDT"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:29:57.263Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "ASstLAwRx6EoPoyz62Xu_56",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"ASstLAwRx6EoPoyz62Xu_56\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "ASstLAwRx6EoPoyz62Xu_56"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 454,
+      "completedAt": "2026-11-22T13:29:57.717Z"
+    },
+    {
+      "_id": "log_1795354197250_k1q69",
+      "createdAt": "2026-11-22T13:29:57.250Z",
+      "updatedAt": "2026-11-22T13:29:57.935Z",
+      "eventId": "initiatecheckout_1795354197229_lrajgsj",
+      "eventName": "InitiateCheckout",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/checkout",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": true,
+        "hasEmail": false,
+        "hasCity": true,
+        "hasCountry": true,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent",
+          "ph",
+          "ct",
+          "country"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "em"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "InitiateCheckout",
+              "event_time": 1795354197,
+              "event_id": "initiatecheckout_1795354197229_lrajgsj",
+              "event_source_url": "http://localhost:3000/checkout",
+              "action_source": "website",
+              "user_data": {
+                "ph": [
+                  "c327520f85b0c6058fed05dfc0a63d8755f325b6ea1b550824f4a8e380d75de1"
+                ],
+                "fn": [
+                  "424ae4deb1b45373852f9a59e8a2a6d8b4f32e32161eecdac1985d79cbe1e8af"
+                ],
+                "ct": [
+                  "de90643718108ec9a93cc6905f2b976297505a8abeac37b747132877fb32fb8d"
+                ],
+                "country": [
+                  "5e657ff6158d3e2a6d23e2a523917a2305acee9423365e268695c4b7b8919f4c"
+                ],
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              },
+              "custom_data": {
+                "content_name": "Cart Checkout",
+                "content_category": "Minoxidil",
+                "content_categories": [
+                  "Minoxidil"
+                ],
+                "content_ids": [
+                  "6b0072b9ca8f2dea4a890e29"
+                ],
+                "contents": [
+                  {
+                    "id": "6b0072b9ca8f2dea4a890e29",
+                    "quantity": 1,
+                    "item_price": 2490,
+                    "category": "Minoxidil"
+                  }
+                ],
+                "content_type": "product",
+                "num_items": 1,
+                "value": 2490,
+                "currency": "BDT"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:29:57.249Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "ASW5fUvBTa0nLFHO_FxOFxa",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"ASW5fUvBTa0nLFHO_FxOFxa\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "ASW5fUvBTa0nLFHO_FxOFxa"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 685,
+      "completedAt": "2026-11-22T13:29:57.935Z"
+    },
+    {
+      "_id": "log_1795354197236_wn73h",
+      "createdAt": "2026-11-22T13:29:57.236Z",
+      "updatedAt": "2026-11-22T13:29:58.284Z",
+      "eventId": "pageview_1795354197228_wkfqp2d",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/checkout",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795354197,
+              "event_id": "pageview_1795354197228_wkfqp2d",
+              "event_source_url": "http://localhost:3000/checkout",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:29:57.236Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "A8z6P0cc7uLu6H1B7y0gzkK",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"A8z6P0cc7uLu6H1B7y0gzkK\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "A8z6P0cc7uLu6H1B7y0gzkK"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 1047,
+      "completedAt": "2026-11-22T13:29:58.284Z"
+    },
+    {
+      "_id": "log_1795354197197_vzx5r",
+      "createdAt": "2026-11-22T13:29:57.197Z",
+      "updatedAt": "2026-11-22T13:29:58.381Z",
+      "eventId": "addtocart_1795354197184_b8zcqur",
+      "eventName": "AddToCart",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/product/3-month-intensive-minoxidil-pack",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "AddToCart",
+              "event_time": 1795354197,
+              "event_id": "addtocart_1795354197184_b8zcqur",
+              "event_source_url": "http://localhost:3000/product/3-month-intensive-minoxidil-pack",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              },
+              "custom_data": {
+                "content_name": "Kirkland Minoxidil 5% – 3 Bottle Pack (90 Days Supply)",
+                "content_category": "Minoxidil",
+                "content_categories": [
+                  "Minoxidil"
+                ],
+                "content_ids": [
+                  "6b0072b9ca8f2dea4a890e29"
+                ],
+                "contents": [
+                  {
+                    "id": "6b0072b9ca8f2dea4a890e29",
+                    "quantity": 1,
+                    "item_price": 2490,
+                    "category": "Minoxidil"
+                  }
+                ],
+                "content_type": "product",
+                "value": 2490,
+                "currency": "BDT",
+                "quantity": 1
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:29:57.197Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AdUmsyiI06lBuaKB7Yb2xif",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"AdUmsyiI06lBuaKB7Yb2xif\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "AdUmsyiI06lBuaKB7Yb2xif"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 1183,
+      "completedAt": "2026-11-22T13:29:58.381Z"
+    },
+    {
+      "_id": "log_1795354195736_e2rqs",
+      "createdAt": "2026-11-22T13:29:55.736Z",
+      "updatedAt": "2026-11-22T13:29:56.486Z",
+      "eventId": "viewcontent_1795354195691_i872w8u",
+      "eventName": "ViewContent",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/product/3-month-intensive-minoxidil-pack",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "ViewContent",
+              "event_time": 1795354195,
+              "event_id": "viewcontent_1795354195691_i872w8u",
+              "event_source_url": "http://localhost:3000/product/3-month-intensive-minoxidil-pack",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              },
+              "custom_data": {
+                "content_name": "Kirkland Minoxidil 5% – 3 Bottle Pack (90 Days Supply)",
+                "content_category": "Minoxidil",
+                "content_categories": [
+                  "Minoxidil"
+                ],
+                "content_ids": [
+                  "6b0072b9ca8f2dea4a890e29"
+                ],
+                "contents": [
+                  {
+                    "id": "6b0072b9ca8f2dea4a890e29",
+                    "quantity": 1,
+                    "item_price": 2490,
+                    "category": "Minoxidil"
+                  }
+                ],
+                "content_type": "product",
+                "value": 2490,
+                "currency": "BDT"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:29:55.736Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "ASivFGE28Un6QJ_AljIqu5Y",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"ASivFGE28Un6QJ_AljIqu5Y\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "ASivFGE28Un6QJ_AljIqu5Y"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 750,
+      "completedAt": "2026-11-22T13:29:56.486Z"
+    },
+    {
+      "_id": "log_1795354195716_jftip",
+      "createdAt": "2026-11-22T13:29:55.716Z",
+      "updatedAt": "2026-11-22T13:29:57.668Z",
+      "eventId": "viewcontent_1795354195690_fzcpykk",
+      "eventName": "ViewContent",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/product/3-month-intensive-minoxidil-pack",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "ViewContent",
+              "event_time": 1795354195,
+              "event_id": "viewcontent_1795354195690_fzcpykk",
+              "event_source_url": "http://localhost:3000/product/3-month-intensive-minoxidil-pack",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              },
+              "custom_data": {
+                "content_name": "Kirkland Minoxidil 5% – 3 Bottle Pack (90 Days Supply)",
+                "content_category": "Minoxidil",
+                "content_categories": [
+                  "Minoxidil"
+                ],
+                "content_ids": [
+                  "6b0072b9ca8f2dea4a890e29"
+                ],
+                "contents": [
+                  {
+                    "id": "6b0072b9ca8f2dea4a890e29",
+                    "quantity": 1,
+                    "item_price": 2490,
+                    "category": "Minoxidil"
+                  }
+                ],
+                "content_type": "product",
+                "value": 2490,
+                "currency": "BDT"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:29:55.716Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "A3e3wQho-nPeCY12KZUzmJ7",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"A3e3wQho-nPeCY12KZUzmJ7\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "A3e3wQho-nPeCY12KZUzmJ7"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 1952,
+      "completedAt": "2026-11-22T13:29:57.668Z"
+    },
+    {
+      "_id": "log_1795354195699_uqow4",
+      "createdAt": "2026-11-22T13:29:55.699Z",
+      "updatedAt": "2026-11-22T13:29:55.992Z",
+      "eventId": "pageview_1795354195689_qw01zmu",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/product/3-month-intensive-minoxidil-pack",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795354195,
+              "event_id": "pageview_1795354195689_qw01zmu",
+              "event_source_url": "http://localhost:3000/product/3-month-intensive-minoxidil-pack",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:29:55.699Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "As1tXEVryoq6hTFYCACG8--",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"As1tXEVryoq6hTFYCACG8--\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "As1tXEVryoq6hTFYCACG8--"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 293,
+      "completedAt": "2026-11-22T13:29:55.992Z"
+    },
+    {
+      "_id": "log_1795354194209_h0msw",
+      "createdAt": "2026-11-22T13:29:54.209Z",
+      "updatedAt": "2026-11-22T13:29:55.336Z",
+      "eventId": "pageview_1795354194205_y3h4f8z",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795354194,
+              "event_id": "pageview_1795354194205_y3h4f8z",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:29:54.209Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "ADDPMYGb3GzrmlNVkj8DyIo",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"ADDPMYGb3GzrmlNVkj8DyIo\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "ADDPMYGb3GzrmlNVkj8DyIo"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 1127,
+      "completedAt": "2026-11-22T13:29:55.336Z"
+    },
+    {
+      "_id": "log_1795353956031_7vlvc",
+      "createdAt": "2026-11-22T13:25:56.031Z",
+      "updatedAt": "2026-11-22T13:25:56.358Z",
+      "eventId": "pageview_1795353956034_tj5vhj4",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": true,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "fbp",
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795353956,
+              "event_id": "pageview_1795353956034_tj5vhj4",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "fbp": "fb.0.1795267164730.146773037210383808",
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:25:56.031Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "Awc6dh1wsZtlMOyRmN4Xakp",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"Awc6dh1wsZtlMOyRmN4Xakp\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "Awc6dh1wsZtlMOyRmN4Xakp"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 326,
+      "completedAt": "2026-11-22T13:25:56.358Z"
+    },
+    {
+      "_id": "log_1795353952702_yqweb",
+      "createdAt": "2026-11-22T13:25:52.702Z",
+      "updatedAt": "2026-11-22T13:25:53.086Z",
+      "eventId": "pageview_1795353952696_e14kb4b",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/order-success/HAIR-2611-8LTM",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795353952,
+              "event_id": "pageview_1795353952696_e14kb4b",
+              "event_source_url": "http://localhost:3000/order-success/HAIR-2611-8LTM",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:25:52.702Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AqJw61x5Es7f6YaJmRyT6vU",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"AqJw61x5Es7f6YaJmRyT6vU\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "AqJw61x5Es7f6YaJmRyT6vU"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 381,
+      "completedAt": "2026-11-22T13:25:53.086Z"
+    },
+    {
+      "_id": "log_1795353952657_k0bor",
+      "createdAt": "2026-11-22T13:25:52.657Z",
+      "updatedAt": "2026-11-22T13:25:53.105Z",
+      "eventId": "order_HAIR-2611-8LTM",
+      "eventName": "Purchase",
+      "orderId": "HAIR-2611-8LTM",
+      "eventSource": "server_order",
+      "eventSourceUrl": "http://localhost:3000/admin/meta",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": true,
+        "hasEmail": false,
+        "hasCity": true,
+        "hasCountry": true,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent",
+          "ph",
+          "ct",
+          "country"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "em"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "Purchase",
+              "event_time": 1795353952,
+              "event_id": "order_HAIR-2611-8LTM",
+              "event_source_url": "http://localhost:3000/admin/meta",
+              "action_source": "website",
+              "user_data": {
+                "ph": [
+                  "c327520f85b0c6058fed05dfc0a63d8755f325b6ea1b550824f4a8e380d75de1"
+                ],
+                "fn": [
+                  "424ae4deb1b45373852f9a59e8a2a6d8b4f32e32161eecdac1985d79cbe1e8af"
+                ],
+                "ln": [
+                  "234965409e3e1169b6f72b7f1291bb6b20bf4db8b8d02c9300bedea3194529bd"
+                ],
+                "ct": [
+                  "de90643718108ec9a93cc6905f2b976297505a8abeac37b747132877fb32fb8d"
+                ],
+                "country": [
+                  "5e657ff6158d3e2a6d23e2a523917a2305acee9423365e268695c4b7b8919f4c"
+                ],
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              },
+              "custom_data": {
+                "currency": "BDT",
+                "value": 1670,
+                "order_id": "HAIR-2611-8LTM",
+                "content_name": "Order Purchase",
+                "content_type": "product",
+                "content_category": "Minoxidil",
+                "content_categories": [
+                  "Minoxidil"
+                ],
+                "contents": [
+                  {
+                    "id": "prod_1795258657132",
+                    "quantity": 1,
+                    "item_price": 1600,
+                    "category": "Minoxidil"
+                  }
+                ],
+                "num_items": 1
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:25:52.657Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AI6Rfc8bnXHE5gRoNgr7GOl",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"AI6Rfc8bnXHE5gRoNgr7GOl\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "AI6Rfc8bnXHE5gRoNgr7GOl"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 447,
+      "completedAt": "2026-11-22T13:25:53.105Z"
+    },
+    {
+      "_id": "log_1795353949050_b7708",
+      "createdAt": "2026-11-22T13:25:49.050Z",
+      "updatedAt": "2026-11-22T13:25:49.431Z",
+      "eventId": "initiatecheckout_1795353949010_wj0or4r",
+      "eventName": "InitiateCheckout",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/checkout",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": true,
+        "hasEmail": false,
+        "hasCity": true,
+        "hasCountry": true,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent",
+          "ph",
+          "ct",
+          "country"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "em"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "InitiateCheckout",
+              "event_time": 1795353949,
+              "event_id": "initiatecheckout_1795353949010_wj0or4r",
+              "event_source_url": "http://localhost:3000/checkout",
+              "action_source": "website",
+              "user_data": {
+                "ph": [
+                  "c327520f85b0c6058fed05dfc0a63d8755f325b6ea1b550824f4a8e380d75de1"
+                ],
+                "fn": [
+                  "424ae4deb1b45373852f9a59e8a2a6d8b4f32e32161eecdac1985d79cbe1e8af"
+                ],
+                "ct": [
+                  "de90643718108ec9a93cc6905f2b976297505a8abeac37b747132877fb32fb8d"
+                ],
+                "country": [
+                  "5e657ff6158d3e2a6d23e2a523917a2305acee9423365e268695c4b7b8919f4c"
+                ],
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              },
+              "custom_data": {
+                "content_name": "Cart Checkout",
+                "content_category": "Minoxidil",
+                "content_categories": [
+                  "Minoxidil"
+                ],
+                "content_ids": [
+                  "prod_1795258657132"
+                ],
+                "contents": [
+                  {
+                    "id": "prod_1795258657132",
+                    "quantity": 1,
+                    "item_price": 1600,
+                    "category": "Minoxidil"
+                  }
+                ],
+                "content_type": "product",
+                "num_items": 1,
+                "value": 1600,
+                "currency": "BDT"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:25:49.050Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "APrP0_8pglXAIx11TCivuWG",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"APrP0_8pglXAIx11TCivuWG\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "APrP0_8pglXAIx11TCivuWG"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 380,
+      "completedAt": "2026-11-22T13:25:49.431Z"
+    },
+    {
+      "_id": "log_1795353949024_hgkx6",
+      "createdAt": "2026-11-22T13:25:49.024Z",
+      "updatedAt": "2026-11-22T13:25:51.254Z",
+      "eventId": "initiatecheckout_1795353949007_7yu82he",
+      "eventName": "InitiateCheckout",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/checkout",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": true,
+        "hasEmail": false,
+        "hasCity": true,
+        "hasCountry": true,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent",
+          "ph",
+          "ct",
+          "country"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "em"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "InitiateCheckout",
+              "event_time": 1795353949,
+              "event_id": "initiatecheckout_1795353949007_7yu82he",
+              "event_source_url": "http://localhost:3000/checkout",
+              "action_source": "website",
+              "user_data": {
+                "ph": [
+                  "c327520f85b0c6058fed05dfc0a63d8755f325b6ea1b550824f4a8e380d75de1"
+                ],
+                "fn": [
+                  "424ae4deb1b45373852f9a59e8a2a6d8b4f32e32161eecdac1985d79cbe1e8af"
+                ],
+                "ct": [
+                  "de90643718108ec9a93cc6905f2b976297505a8abeac37b747132877fb32fb8d"
+                ],
+                "country": [
+                  "5e657ff6158d3e2a6d23e2a523917a2305acee9423365e268695c4b7b8919f4c"
+                ],
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              },
+              "custom_data": {
+                "content_name": "Cart Checkout",
+                "content_category": "Minoxidil",
+                "content_categories": [
+                  "Minoxidil"
+                ],
+                "content_ids": [
+                  "prod_1795258657132"
+                ],
+                "contents": [
+                  {
+                    "id": "prod_1795258657132",
+                    "quantity": 1,
+                    "item_price": 1600,
+                    "category": "Minoxidil"
+                  }
+                ],
+                "content_type": "product",
+                "num_items": 1,
+                "value": 1600,
+                "currency": "BDT"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:25:49.024Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AfJ4rfUwDkLwaJzGdv14_wE",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"AfJ4rfUwDkLwaJzGdv14_wE\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "AfJ4rfUwDkLwaJzGdv14_wE"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 2230,
+      "completedAt": "2026-11-22T13:25:51.254Z"
+    },
+    {
+      "_id": "log_1795353949006_bf84v",
+      "createdAt": "2026-11-22T13:25:49.006Z",
+      "updatedAt": "2026-11-22T13:25:49.535Z",
+      "eventId": "pageview_1795353949006_zu8i1u2",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/checkout",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795353949,
+              "event_id": "pageview_1795353949006_zu8i1u2",
+              "event_source_url": "http://localhost:3000/checkout",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:25:49.006Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "A1zLd2rDsJt66OCgOqky7au",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"A1zLd2rDsJt66OCgOqky7au\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "A1zLd2rDsJt66OCgOqky7au"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 529,
+      "completedAt": "2026-11-22T13:25:49.535Z"
+    },
+    {
+      "_id": "log_1795353947713_9s4vy",
+      "createdAt": "2026-11-22T13:25:47.713Z",
+      "updatedAt": "2026-11-22T13:25:49.079Z",
+      "eventId": "initiatecheckout_1795353947670_k6sg1al",
+      "eventName": "InitiateCheckout",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/checkout",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": true,
+        "hasEmail": false,
+        "hasCity": true,
+        "hasCountry": true,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent",
+          "ph",
+          "ct",
+          "country"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "em"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "InitiateCheckout",
+              "event_time": 1795353947,
+              "event_id": "initiatecheckout_1795353947670_k6sg1al",
+              "event_source_url": "http://localhost:3000/checkout",
+              "action_source": "website",
+              "user_data": {
+                "ph": [
+                  "c327520f85b0c6058fed05dfc0a63d8755f325b6ea1b550824f4a8e380d75de1"
+                ],
+                "fn": [
+                  "424ae4deb1b45373852f9a59e8a2a6d8b4f32e32161eecdac1985d79cbe1e8af"
+                ],
+                "ct": [
+                  "de90643718108ec9a93cc6905f2b976297505a8abeac37b747132877fb32fb8d"
+                ],
+                "country": [
+                  "5e657ff6158d3e2a6d23e2a523917a2305acee9423365e268695c4b7b8919f4c"
+                ],
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              },
+              "custom_data": {
+                "content_name": "Cart Checkout",
+                "content_category": "Minoxidil",
+                "content_categories": [
+                  "Minoxidil"
+                ],
+                "content_ids": [
+                  "prod_1795258657132"
+                ],
+                "contents": [
+                  {
+                    "id": "prod_1795258657132",
+                    "quantity": 1,
+                    "item_price": 1600,
+                    "category": "Minoxidil"
+                  }
+                ],
+                "content_type": "product",
+                "num_items": 1,
+                "value": 1600,
+                "currency": "BDT"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:25:47.713Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "Ano3-xgSENZgR0qI7BAyUEE",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"Ano3-xgSENZgR0qI7BAyUEE\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "Ano3-xgSENZgR0qI7BAyUEE"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 1364,
+      "completedAt": "2026-11-22T13:25:49.079Z"
+    },
+    {
+      "_id": "log_1795353947685_bfhtv",
+      "createdAt": "2026-11-22T13:25:47.685Z",
+      "updatedAt": "2026-11-22T13:25:49.946Z",
+      "eventId": "initiatecheckout_1795353947662_wxl6rs6",
+      "eventName": "InitiateCheckout",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/checkout",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": true,
+        "hasEmail": false,
+        "hasCity": true,
+        "hasCountry": true,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent",
+          "ph",
+          "ct",
+          "country"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "em"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "InitiateCheckout",
+              "event_time": 1795353947,
+              "event_id": "initiatecheckout_1795353947662_wxl6rs6",
+              "event_source_url": "http://localhost:3000/checkout",
+              "action_source": "website",
+              "user_data": {
+                "ph": [
+                  "c327520f85b0c6058fed05dfc0a63d8755f325b6ea1b550824f4a8e380d75de1"
+                ],
+                "fn": [
+                  "424ae4deb1b45373852f9a59e8a2a6d8b4f32e32161eecdac1985d79cbe1e8af"
+                ],
+                "ct": [
+                  "de90643718108ec9a93cc6905f2b976297505a8abeac37b747132877fb32fb8d"
+                ],
+                "country": [
+                  "5e657ff6158d3e2a6d23e2a523917a2305acee9423365e268695c4b7b8919f4c"
+                ],
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              },
+              "custom_data": {
+                "content_name": "Cart Checkout",
+                "content_category": "Minoxidil",
+                "content_categories": [
+                  "Minoxidil"
+                ],
+                "content_ids": [
+                  "prod_1795258657132"
+                ],
+                "contents": [
+                  {
+                    "id": "prod_1795258657132",
+                    "quantity": 1,
+                    "item_price": 1600,
+                    "category": "Minoxidil"
+                  }
+                ],
+                "content_type": "product",
+                "num_items": 1,
+                "value": 1600,
+                "currency": "BDT"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:25:47.685Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "Ayav55gUrmRCsKe4vgyiFn6",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"Ayav55gUrmRCsKe4vgyiFn6\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "Ayav55gUrmRCsKe4vgyiFn6"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 2260,
+      "completedAt": "2026-11-22T13:25:49.946Z"
+    },
+    {
+      "_id": "log_1795353947663_4wnjo",
+      "createdAt": "2026-11-22T13:25:47.663Z",
+      "updatedAt": "2026-11-22T13:25:48.074Z",
+      "eventId": "pageview_1795353947661_kp34uw6",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/checkout",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795353947,
+              "event_id": "pageview_1795353947661_kp34uw6",
+              "event_source_url": "http://localhost:3000/checkout",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:25:47.663Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "A6cmnFqWcK9t1JFmlMNF6et",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"A6cmnFqWcK9t1JFmlMNF6et\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "A6cmnFqWcK9t1JFmlMNF6et"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 411,
+      "completedAt": "2026-11-22T13:25:48.074Z"
+    },
+    {
+      "_id": "log_1795353946058_rxh9c",
+      "createdAt": "2026-11-22T13:25:46.058Z",
+      "updatedAt": "2026-11-22T13:25:46.435Z",
+      "eventId": "pageview_1795353946044_k7094oo",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795353946,
+              "event_id": "pageview_1795353946044_k7094oo",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:25:46.058Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AwfIM0PcZP3Q_zd5XZDosxA",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"AwfIM0PcZP3Q_zd5XZDosxA\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "AwfIM0PcZP3Q_zd5XZDosxA"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 374,
+      "completedAt": "2026-11-22T13:25:46.434Z"
+    },
+    {
+      "_id": "log_1795353364313_zv2lw",
+      "createdAt": "2026-11-22T13:16:04.313Z",
+      "updatedAt": "2026-11-22T13:16:04.313Z",
+      "eventId": "order_HAIR-2611-368D",
+      "eventName": "Purchase",
+      "orderId": "HAIR-2611-368D",
+      "eventSource": "server_order",
+      "eventSourceUrl": "",
+      "status": "pending",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": true,
+        "hasEmail": false,
+        "hasCity": true,
+        "hasCountry": true,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent",
+          "ph",
+          "ct",
+          "country"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "em"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "Purchase",
+              "event_time": 1795353364,
+              "event_id": "order_HAIR-2611-368D",
+              "event_source_url": "",
+              "action_source": "website",
+              "user_data": {
+                "ph": [
+                  "c327520f85b0c6058fed05dfc0a63d8755f325b6ea1b550824f4a8e380d75de1"
+                ],
+                "fn": [
+                  "cbab2c1879445f5aecacda9dbad7fe2854010052f42aa4f5130e4749081e399f"
+                ],
+                "ln": [
+                  "a08ba4513b24fbf2aae9aeb9902e49c4f8c85d5833d9040ad9b67336b4fece43"
+                ],
+                "ct": [
+                  "de90643718108ec9a93cc6905f2b976297505a8abeac37b747132877fb32fb8d"
+                ],
+                "country": [
+                  "5e657ff6158d3e2a6d23e2a523917a2305acee9423365e268695c4b7b8919f4c"
+                ],
+                "client_user_agent": "node"
+              },
+              "custom_data": {
+                "currency": "BDT",
+                "value": 1730,
+                "order_id": "HAIR-2611-368D",
+                "content_name": "Order Purchase",
+                "content_type": "product",
+                "content_category": "Minoxidil",
+                "content_categories": [
+                  "Minoxidil"
+                ],
+                "contents": [
+                  {
+                    "id": "prod_1795199827958",
+                    "quantity": 2,
+                    "item_price": 830,
+                    "category": "Minoxidil"
+                  }
+                ],
+                "num_items": 2
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:16:04.313Z"
+    },
+    {
+      "_id": "log_1795353337238_2f3ef",
+      "createdAt": "2026-11-22T13:15:37.238Z",
+      "updatedAt": "2026-11-22T13:15:37.792Z",
+      "eventId": "order_HAIR-2611-7JM2",
+      "eventName": "Purchase",
+      "orderId": "HAIR-2611-7JM2",
+      "eventSource": "server_order",
+      "eventSourceUrl": "",
+      "status": "invalid_payload",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": true,
+        "hasEmail": false,
+        "hasCity": true,
+        "hasCountry": true,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent",
+          "ph",
+          "ct",
+          "country"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "em"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "Purchase",
+              "event_time": 1795353337,
+              "event_id": "order_HAIR-2611-7JM2",
+              "event_source_url": "",
+              "action_source": "website",
+              "user_data": {
+                "ph": [
+                  "c327520f85b0c6058fed05dfc0a63d8755f325b6ea1b550824f4a8e380d75de1"
+                ],
+                "fn": [
+                  "cbab2c1879445f5aecacda9dbad7fe2854010052f42aa4f5130e4749081e399f"
+                ],
+                "ln": [
+                  "a08ba4513b24fbf2aae9aeb9902e49c4f8c85d5833d9040ad9b67336b4fece43"
+                ],
+                "ct": [
+                  "de90643718108ec9a93cc6905f2b976297505a8abeac37b747132877fb32fb8d"
+                ],
+                "country": [
+                  "5e657ff6158d3e2a6d23e2a523917a2305acee9423365e268695c4b7b8919f4c"
+                ],
+                "client_user_agent": "node"
+              },
+              "custom_data": {
+                "currency": "BDT",
+                "value": 1730,
+                "order_id": "HAIR-2611-7JM2",
+                "content_name": "Order Purchase",
+                "content_type": "product",
+                "content_category": "Minoxidil",
+                "content_categories": [
+                  "Minoxidil"
+                ],
+                "contents": [
+                  {
+                    "id": "prod_1795199827958",
+                    "quantity": 2,
+                    "item_price": 830,
+                    "category": "Minoxidil"
+                  }
+                ],
+                "num_items": 2
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T13:15:37.238Z",
+      "response": {
+        "httpStatus": 400,
+        "httpStatusText": "Bad Request",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AgNdtmIWa2u1Ru_O9gpXY-l",
+        "errorCode": 100,
+        "errorMessage": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+        "rawBody": "{\"error\":{\"message\":\"Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\"type\":\"GraphMethodException\",\"code\":100,\"error_subcode\":33,\"fbtrace_id\":\"AgNdtmIWa2u1Ru_O9gpXY-l\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Unsupported post request. Object with ID '17225166561875251' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api",
+            "type": "GraphMethodException",
+            "code": 100,
+            "error_subcode": 33,
+            "fbtrace_id": "AgNdtmIWa2u1Ru_O9gpXY-l"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 552,
+      "completedAt": "2026-11-22T13:15:37.792Z"
+    },
+    {
+      "_id": "log_1795348351228_gbo56",
+      "createdAt": "2026-11-22T11:52:31.228Z",
+      "updatedAt": "2026-11-22T11:52:35.746Z",
+      "eventId": "pageview_1795348351233_xvn7qdr",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795348351,
+              "event_id": "pageview_1795348351233_xvn7qdr",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T11:52:31.228Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "A4OBdqVE8Pwa-6U0pDQQHd2",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"A4OBdqVE8Pwa-6U0pDQQHd2\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "A4OBdqVE8Pwa-6U0pDQQHd2"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 4517,
+      "completedAt": "2026-11-22T11:52:35.746Z"
+    },
+    {
+      "_id": "log_1795348338377_4q9zi",
+      "createdAt": "2026-11-22T11:52:18.377Z",
+      "updatedAt": "2026-11-22T11:52:18.953Z",
+      "eventId": "pageview_1795348338380_83yq8af",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795348338,
+              "event_id": "pageview_1795348338380_83yq8af",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T11:52:18.377Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AOIuuk2mJ8ReA_sLNsqWI7h",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AOIuuk2mJ8ReA_sLNsqWI7h\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "AOIuuk2mJ8ReA_sLNsqWI7h"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 576,
+      "completedAt": "2026-11-22T11:52:18.953Z"
+    },
+    {
+      "_id": "log_1795348338142_qok7s",
+      "createdAt": "2026-11-22T11:52:18.142Z",
+      "updatedAt": "2026-11-22T11:52:18.938Z",
+      "eventId": "pageview_1795348338119_j7vjjgb",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": true,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "fbp",
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795348338,
+              "event_id": "pageview_1795348338119_j7vjjgb",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "fbp": "fb.0.1795267164730.146773037210383808",
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T11:52:18.142Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "A8Nd7nENtKG9OmhXbAi-QN3",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"A8Nd7nENtKG9OmhXbAi-QN3\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "A8Nd7nENtKG9OmhXbAi-QN3"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 795,
+      "completedAt": "2026-11-22T11:52:18.938Z"
+    },
+    {
+      "_id": "log_1795348289390_d9urn",
+      "createdAt": "2026-11-22T11:51:29.390Z",
+      "updatedAt": "2026-11-22T11:51:39.413Z",
+      "eventId": "pageview_1795348289393_szoidyq",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "timeout",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795348289,
+              "event_id": "pageview_1795348289393_szoidyq",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T11:51:29.389Z",
+      "response": {
+        "httpStatus": null,
+        "httpStatusText": "TimeoutError",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": null,
+        "errorCode": 23,
+        "errorMessage": "The operation was aborted due to timeout",
+        "rawBody": null,
+        "metaResponseBody": null,
+        "responseParseStatus": "network_error",
+        "parseError": "The operation was aborted due to timeout"
+      },
+      "durationMs": 10024,
+      "completedAt": "2026-11-22T11:51:39.413Z"
+    },
+    {
+      "_id": "log_1795348274597_a64ls",
+      "createdAt": "2026-11-22T11:51:14.597Z",
+      "updatedAt": "2026-11-22T11:51:14.893Z",
+      "eventId": "pageview_1795348274601_qithwcp",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795348274,
+              "event_id": "pageview_1795348274601_qithwcp",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T11:51:14.597Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AEByNH3Z_6vxyIOkUJ5J8KK",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AEByNH3Z_6vxyIOkUJ5J8KK\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "AEByNH3Z_6vxyIOkUJ5J8KK"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 296,
+      "completedAt": "2026-11-22T11:51:14.893Z"
+    },
+    {
+      "_id": "log_1795348270542_k4osu",
+      "createdAt": "2026-11-22T11:51:10.542Z",
+      "updatedAt": "2026-11-22T11:51:13.471Z",
+      "eventId": "pageview_1795348270534_1nwpgyu",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": true,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "fbp",
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795348270,
+              "event_id": "pageview_1795348270534_1nwpgyu",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "fbp": "fb.0.1795267164730.146773037210383808",
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T11:51:10.541Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "A2sK17jZmrF6iyaO0EqLi9X",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"A2sK17jZmrF6iyaO0EqLi9X\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "A2sK17jZmrF6iyaO0EqLi9X"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 2928,
+      "completedAt": "2026-11-22T11:51:13.470Z"
+    },
+    {
+      "_id": "log_1795347321319_kooxv",
+      "createdAt": "2026-11-22T11:35:21.319Z",
+      "updatedAt": "2026-11-22T11:35:21.627Z",
+      "eventId": "pageview_1795347321324_hbom5rm",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795347321,
+              "event_id": "pageview_1795347321324_hbom5rm",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T11:35:21.319Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AJxmd7K_7DZT2qN95QXU1KG",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AJxmd7K_7DZT2qN95QXU1KG\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "AJxmd7K_7DZT2qN95QXU1KG"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 308,
+      "completedAt": "2026-11-22T11:35:21.627Z"
+    },
+    {
+      "_id": "log_1795346046188_mhhaq",
+      "createdAt": "2026-11-22T11:14:06.188Z",
+      "updatedAt": "2026-11-22T11:14:08.900Z",
+      "eventId": "pageview_1795346046183_9igc1wz",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795346046,
+              "event_id": "pageview_1795346046183_9igc1wz",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T11:14:06.188Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "ATeXPkDZD2q0OIDtcCjSioL",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"ATeXPkDZD2q0OIDtcCjSioL\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "ATeXPkDZD2q0OIDtcCjSioL"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 2712,
+      "completedAt": "2026-11-22T11:14:08.900Z"
+    },
+    {
+      "_id": "log_1795342936760_dykm2",
+      "createdAt": "2026-11-22T10:22:16.760Z",
+      "updatedAt": "2026-11-22T10:22:17.073Z",
+      "eventId": "pageview_1795342936758_1ppgedk",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795342936,
+              "event_id": "pageview_1795342936758_1ppgedk",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T10:22:16.760Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "A3ynun1wThIuvJArP6aai3K",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"A3ynun1wThIuvJArP6aai3K\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "A3ynun1wThIuvJArP6aai3K"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 312,
+      "completedAt": "2026-11-22T10:22:17.073Z"
+    },
+    {
+      "_id": "log_1795342920012_ucdry",
+      "createdAt": "2026-11-22T10:22:00.012Z",
+      "updatedAt": "2026-11-22T10:22:00.471Z",
+      "eventId": "pageview_1795342919988_cb79zx2",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": true,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "fbp",
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795342920,
+              "event_id": "pageview_1795342919988_cb79zx2",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "fbp": "fb.0.1795267164730.146773037210383808",
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T10:22:00.012Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AdrjaLKVdZ6eFj95abo22RA",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AdrjaLKVdZ6eFj95abo22RA\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "AdrjaLKVdZ6eFj95abo22RA"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 457,
+      "completedAt": "2026-11-22T10:22:00.471Z"
+    },
+    {
+      "_id": "log_1795342507759_sh4bd",
+      "createdAt": "2026-11-22T10:15:07.759Z",
+      "updatedAt": "2026-11-22T10:15:08.392Z",
+      "eventId": "pageview_1795342507754_80ugsbc",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795342507,
+              "event_id": "pageview_1795342507754_80ugsbc",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T10:15:07.759Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AVvXk8i5pr5zrClQ9aI52dE",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AVvXk8i5pr5zrClQ9aI52dE\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "AVvXk8i5pr5zrClQ9aI52dE"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 632,
+      "completedAt": "2026-11-22T10:15:08.392Z"
+    },
+    {
+      "_id": "log_1795342479703_y1dwo",
+      "createdAt": "2026-11-22T10:14:39.703Z",
+      "updatedAt": "2026-11-22T10:14:40.016Z",
+      "eventId": "pageview_1795342479698_k1l6fmk",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795342479,
+              "event_id": "pageview_1795342479698_k1l6fmk",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T10:14:39.703Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AvDPXDAx6Cv4jL3BetaploO",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AvDPXDAx6Cv4jL3BetaploO\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "AvDPXDAx6Cv4jL3BetaploO"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 313,
+      "completedAt": "2026-11-22T10:14:40.016Z"
+    },
+    {
+      "_id": "log_1795342472841_2zghq",
+      "createdAt": "2026-11-22T10:14:32.841Z",
+      "updatedAt": "2026-11-22T10:14:33.192Z",
+      "eventId": "pageview_1795342472849_hfmflwz",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795342472,
+              "event_id": "pageview_1795342472849_hfmflwz",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T10:14:32.841Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "A54raTQI69JcDsMSvgdHaXc",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"A54raTQI69JcDsMSvgdHaXc\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "A54raTQI69JcDsMSvgdHaXc"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 351,
+      "completedAt": "2026-11-22T10:14:33.192Z"
+    },
+    {
+      "_id": "log_1795342329363_d4l4z",
+      "createdAt": "2026-11-22T10:12:09.363Z",
+      "updatedAt": "2026-11-22T10:12:09.880Z",
+      "eventId": "pageview_1795342329308_kcvpsur",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795342329,
+              "event_id": "pageview_1795342329308_kcvpsur",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T10:12:09.363Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AUdDMOQstUUcirU02moClTr",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AUdDMOQstUUcirU02moClTr\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "AUdDMOQstUUcirU02moClTr"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 517,
+      "completedAt": "2026-11-22T10:12:09.880Z"
+    },
+    {
+      "_id": "log_1795342278780_x1arw",
+      "createdAt": "2026-11-22T10:11:18.780Z",
+      "updatedAt": "2026-11-22T10:11:19.111Z",
+      "eventId": "pageview_1795342278750_wdk2dex",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795342278,
+              "event_id": "pageview_1795342278750_wdk2dex",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T10:11:18.780Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AllTgo0YSkf0hPwwFlgLaMb",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AllTgo0YSkf0hPwwFlgLaMb\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "AllTgo0YSkf0hPwwFlgLaMb"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 330,
+      "completedAt": "2026-11-22T10:11:19.111Z"
+    },
+    {
+      "_id": "log_1795342167665_4w4ya",
+      "createdAt": "2026-11-22T10:09:27.665Z",
+      "updatedAt": "2026-11-22T10:09:27.951Z",
+      "eventId": "pageview_1795342167660_p4veyc0",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795342167,
+              "event_id": "pageview_1795342167660_p4veyc0",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T10:09:27.665Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "A2QD9B9LMKUNgHorJunUD3k",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"A2QD9B9LMKUNgHorJunUD3k\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "A2QD9B9LMKUNgHorJunUD3k"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 286,
+      "completedAt": "2026-11-22T10:09:27.951Z"
+    },
+    {
+      "_id": "log_1795342157130_2u6y5",
+      "createdAt": "2026-11-22T10:09:17.130Z",
+      "updatedAt": "2026-11-22T10:09:17.395Z",
+      "eventId": "pageview_1795342157072_rtvfxak",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795342157,
+              "event_id": "pageview_1795342157072_rtvfxak",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T10:09:17.130Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "A-SzprqK-6QGdXyOa65CiEq",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"A-SzprqK-6QGdXyOa65CiEq\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "A-SzprqK-6QGdXyOa65CiEq"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 265,
+      "completedAt": "2026-11-22T10:09:17.395Z"
+    },
+    {
+      "_id": "log_1795342155666_8kmo1",
+      "createdAt": "2026-11-22T10:09:15.666Z",
+      "updatedAt": "2026-11-22T10:09:15.997Z",
+      "eventId": "pageview_1795342155598_zej4keh",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795342155,
+              "event_id": "pageview_1795342155598_zej4keh",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T10:09:15.666Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AJNYxoy9DOQHHvOa7n9uVAR",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AJNYxoy9DOQHHvOa7n9uVAR\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "AJNYxoy9DOQHHvOa7n9uVAR"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 331,
+      "completedAt": "2026-11-22T10:09:15.997Z"
+    },
+    {
+      "_id": "log_1795342055429_cxfpg",
+      "createdAt": "2026-11-22T10:07:35.429Z",
+      "updatedAt": "2026-11-22T10:07:35.763Z",
+      "eventId": "pageview_1795342055363_vjp8eyc",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795342055,
+              "event_id": "pageview_1795342055363_vjp8eyc",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T10:07:35.429Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AXr5TSSqDz-XkeoprEvsAWe",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AXr5TSSqDz-XkeoprEvsAWe\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "AXr5TSSqDz-XkeoprEvsAWe"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 333,
+      "completedAt": "2026-11-22T10:07:35.763Z"
+    },
+    {
+      "_id": "log_1795342050228_7a8qt",
+      "createdAt": "2026-11-22T10:07:30.228Z",
+      "updatedAt": "2026-11-22T10:07:30.976Z",
+      "eventId": "pageview_1795342050223_1oigb5z",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795342050,
+              "event_id": "pageview_1795342050223_1oigb5z",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T10:07:30.228Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AZa3ASs3i690i2Wv0tsJ8XX",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AZa3ASs3i690i2Wv0tsJ8XX\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "AZa3ASs3i690i2Wv0tsJ8XX"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 748,
+      "completedAt": "2026-11-22T10:07:30.976Z"
+    },
+    {
+      "_id": "log_1795341819912_tb2w5",
+      "createdAt": "2026-11-22T10:03:39.912Z",
+      "updatedAt": "2026-11-22T10:03:40.258Z",
+      "eventId": "pageview_1795341819908_qbkzidj",
+      "eventName": "PageView",
+      "orderId": "",
+      "eventSource": "browser_forwarded",
+      "eventSourceUrl": "http://localhost:3000/",
+      "status": "failed",
+      "matching": {
+        "hasFbp": false,
+        "hasFbc": false,
+        "fbcSource": "none",
+        "hasIp": false,
+        "hasUserAgent": true,
+        "hasPhone": false,
+        "hasEmail": false,
+        "hasCity": false,
+        "hasCountry": false,
+        "hasExternalId": false,
+        "presentParameters": [
+          "client_user_agent"
+        ],
+        "missingParameters": [
+          "fbp",
+          "fbc",
+          "client_ip_address",
+          "ph",
+          "em",
+          "ct",
+          "country"
+        ]
+      },
+      "request": {
+        "endpoint": "https://graph.facebook.com/v19.0/META_PIXEL_ID/events",
+        "method": "POST",
+        "eventCount": 1,
+        "payload": {
+          "data": [
+            {
+              "event_name": "PageView",
+              "event_time": 1795341819,
+              "event_id": "pageview_1795341819908_qbkzidj",
+              "event_source_url": "http://localhost:3000/",
+              "action_source": "website",
+              "user_data": {
+                "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36"
+              }
+            }
+          ]
+        }
+      },
+      "attempts": 1,
+      "expiresAt": "2026-11-29T10:03:39.912Z",
+      "response": {
+        "httpStatus": 401,
+        "httpStatusText": "Unauthorized",
+        "eventsReceived": 0,
+        "messages": [],
+        "fbtraceId": "AwgMWMtwFp32RfixaaEvHY1",
+        "errorCode": 190,
+        "errorMessage": "Invalid OAuth access token - Cannot parse access token",
+        "rawBody": "{\"error\":{\"message\":\"Invalid OAuth access token - Cannot parse access token\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AwgMWMtwFp32RfixaaEvHY1\"}}",
+        "metaResponseBody": {
+          "error": {
+            "message": "Invalid OAuth access token - Cannot parse access token",
+            "type": "OAuthException",
+            "code": 190,
+            "fbtrace_id": "AwgMWMtwFp32RfixaaEvHY1"
+          }
+        },
+        "responseParseStatus": "success",
+        "parseError": null
+      },
+      "durationMs": 346,
+      "completedAt": "2026-11-22T10:03:40.258Z"
+    },
     {
       "_id": "log_1795339428679_qax4c",
       "createdAt": "2026-11-22T09:23:48.679Z",

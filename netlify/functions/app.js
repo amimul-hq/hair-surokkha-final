@@ -16,8 +16,12 @@ import {
 } from './db.js';
 
 import { sendMetaCapiEvent, retryMetaCapiEvent, extractClientIp } from './utils/metaCapi.js';
+import { sendOrderToMongoDB, connectMongoOrders } from './mongoOrders.js';
 
 dotenv.config();
+
+// Pre-warm MongoDB order connection in background if URI is present
+connectMongoOrders().catch(() => {});
 
 const app = express();
 
@@ -343,6 +347,13 @@ app.post('/api/orders', async (req, res) => {
     };
 
     const createdOrder = await localJsonStore.addOrder(orderPayload, true);
+
+    // 3b. Mirror order details to MongoDB collection (fault-tolerant & resilient)
+    try {
+      await sendOrderToMongoDB(createdOrder);
+    } catch (mongoErr) {
+      console.warn('[MongoDB Orders] Background order sync notice:', mongoErr.message);
+    }
 
     // 4. Trigger Server-Side Meta Conversions API (CAPI) Purchase Event
     const isCapiActive = siteMeta?.isCapiEnabled !== false;
@@ -808,6 +819,12 @@ app.put('/api/admin/orders/:id/status', requireAdmin, async (req, res) => {
       return res.status(404).json({ success: false, message: 'Order not found' });
     }
 
+    try {
+      await sendOrderToMongoDB(updatedOrder);
+    } catch (mongoErr) {
+      console.warn('[MongoDB Orders] Order status update notice:', mongoErr.message);
+    }
+
     return res.json({ success: true, message: `Order status updated to ${status}`, data: updatedOrder });
   } catch (err) {
     return res.status(500).json({ success: false, message: err.message });
@@ -910,6 +927,13 @@ app.post('/api/admin/orders', requireAdmin, async (req, res) => {
     };
 
     const createdOrder = await localJsonStore.addOrder(orderPayload);
+
+    // 3b. Mirror order details to MongoDB collection (fault-tolerant & resilient)
+    try {
+      await sendOrderToMongoDB(createdOrder);
+    } catch (mongoErr) {
+      console.warn('[MongoDB Orders] Background order sync notice:', mongoErr.message);
+    }
 
     return res.status(201).json({
       success: true,
